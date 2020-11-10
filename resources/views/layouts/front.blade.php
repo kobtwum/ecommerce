@@ -8,21 +8,21 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
 
     <!-- all css here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="assets/css/icofont.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-    <link rel="stylesheet" href="assets/css/bundle.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="/assets/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/assets/css/icofont.css">
+    <link rel="stylesheet" href="/assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="/assets/css/bundle.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -72,28 +72,15 @@
             <div class="header-bottom-wrapper pr-200 pl-200">
                 <div class="logo-3">
                     <a href="{{ route('home') }}">
-                        <img src="assets/img/logo/logo-3.png" alt="">
+                        <img src="/assets/img/logo/logo-3.png" alt="">
                     </a>
                 </div>
                 <div class="categories-search-wrapper">
-                    <div class="all-categories">
-                        <div class="select-wrapper">
-                            <select class="select">
-                                <option value="">All Categories</option>
-                                <option value="">Smartphones </option>
-                                <option value="">Computers</option>
-                                <option value="">Laptops </option>
-                                <option value="">Camerea </option>
-                                <option value="">Watches</option>
-                                <option value="">Lights </option>
-                                <option value="">Air conditioner</option>
-                            </select>
-                        </div>
-                    </div>
+
                     <div class="categories-wrapper">
-                        <form action="#">
-                            <input placeholder="Enter Your key word" type="text">
-                            <button type="button"> Search </button>
+                        <form action="{{ route('products.search') }}" method="GET">
+                            <input name="query" placeholder="Enter Your key word" type="text">
+                            <button type="submit"> Search </button>
                         </form>
                     </div>
                 </div>
@@ -196,7 +183,7 @@
 
     {{-- <div class="banner-area wrapper-padding pt-30 pb-95">
         <div class="container-fluid">
-            <div class="electro-fexible-banner bg-img" style="background-image: url(assets/img/banner/19.jpg)">
+            <div class="electro-fexible-banner bg-img" style="background-image: url/(/assets/img/banner/19.jpg)">
                 <div class="fexible-content">
                     <h3>Play with flexible</h3>
                     <p>Multicontrol Smooth Controller, Black Color All Buttons
@@ -216,7 +203,7 @@
                     <div class="best-selling-left">
                         <div class="product-wrapper">
                             <div class="product-img-4">
-                                <a href="#"><img src="assets/img/product/electro/9.jpg" alt=""></a>
+                                <a href="#"><img src="/assets/img/product/electro/9.jpg" alt=""></a>
                                 <div class="product-action-right">
                                     <a class="animate-top" title="Add To Cart" href="#">
                                         <i class="pe-7s-cart"></i>
@@ -249,7 +236,7 @@
                                     <div class="product-wrapper mb-6">
                                         <div class="product-img-4">
                                             <a href="#">
-                                                <img src="assets/img/product/electro/10.jpg" alt="">
+                                                <img src="/assets/img/product/electro/10.jpg" alt="">
                                             </a>
                                             <div class="product-action-right">
                                                 <a class="animate-top" title="Add To Cart" href="#">
@@ -277,7 +264,7 @@
                                     <div class="product-wrapper mb-6">
                                         <div class="product-img-4">
                                             <a href="#">
-                                                <img src="assets/img/product/electro/11.jpg" alt="">
+                                                <img src="/assets/img/product/electro/11.jpg" alt="">
                                             </a>
                                             <div class="product-action-right">
                                                 <a class="animate-top" title="Add To Cart" href="#">
@@ -305,7 +292,7 @@
                                     <div class="product-wrapper mb-6">
                                         <div class="product-img-4">
                                             <a href="#">
-                                                <img src="assets/img/product/electro/12.jpg" alt="">
+                                                <img src="/assets/img/product/electro/12.jpg" alt="">
                                             </a>
                                             <div class="product-action-right">
                                                 <a class="animate-top" title="Add To Cart" href="#">
@@ -333,7 +320,7 @@
                                     <div class="product-wrapper mb-6">
                                         <div class="product-img-4">
                                             <a href="#">
-                                                <img src="assets/img/product/electro/13.jpg" alt="">
+                                                <img src="/assets/img/product/electro/13.jpg" alt="">
                                             </a>
                                             <div class="product-action-right">
                                                 <a class="animate-top" title="Add To Cart" href="#">
@@ -361,7 +348,7 @@
                                     <div class="product-wrapper mb-6">
                                         <div class="product-img-4">
                                             <a href="#">
-                                                <img src="assets/img/product/electro/14.jpg" alt="">
+                                                <img src="/assets/img/product/electro/14.jpg" alt="">
                                             </a>
                                             <div class="product-action-right">
                                                 <a class="animate-top" title="Add To Cart" href="#">
@@ -389,7 +376,7 @@
                                     <div class="product-wrapper mb-6">
                                         <div class="product-img-4">
                                             <a href="#">
-                                                <img src="assets/img/product/electro/15.jpg" alt="">
+                                                <img src="/assets/img/product/electro/15.jpg" alt="">
                                             </a>
                                             <div class="product-action-right">
                                                 <a class="animate-top" title="Add To Cart" href="#">
@@ -422,7 +409,7 @@
     </div> --}}
     {{-- <div class="androit-banner-wrapper wrapper-padding pb-175">
         <div class="container-fluid">
-            <div class="androit-banner-img bg-img" style="background-image: url(assets/img/banner/36.jpg)">
+            <div class="androit-banner-img bg-img" style="background-image: url/(/assets/img/banner/36.jpg)">
                 <div class="androit-banner-content">
                     <h3>Xolo Fast T2 Smartphone, Android <br>7.0 Unlocked.</h3>
                     <a href="product-details.html">Buy Now →</a>
@@ -434,7 +421,7 @@
                     </div>
                 </div>
                 <div class="phn-img">
-                    <img src="assets/img/banner/10.png" alt="">
+                    <img src="/assets/img/banner/10.png" alt="">
                 </div>
             </div>
         </div>
@@ -446,7 +433,7 @@
                     <div class="product-wrapper product-wrapper-border mb-30">
                         <div class="product-img-5">
                             <a href="#">
-                                <img src="assets/img/product/electro/16.jpg" alt="">
+                                <img src="/assets/img/product/electro/16.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-content-7">
@@ -477,7 +464,7 @@
                     <div class="product-wrapper product-wrapper-border mb-30">
                         <div class="product-img-5">
                             <a href="#">
-                                <img src="assets/img/product/electro/17.jpg" alt="">
+                                <img src="/assets/img/product/electro/17.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-content-7">
@@ -508,7 +495,7 @@
                     <div class="product-wrapper product-wrapper-border mb-30">
                         <div class="product-img-5">
                             <a href="#">
-                                <img src="assets/img/product/electro/18.jpg" alt="">
+                                <img src="/assets/img/product/electro/18.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-content-7">
@@ -539,7 +526,7 @@
                     <div class="product-wrapper product-wrapper-border mb-30">
                         <div class="product-img-5">
                             <a href="#">
-                                <img src="assets/img/product/electro/19.jpg" alt="">
+                                <img src="/assets/img/product/electro/19.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-content-7">
@@ -570,7 +557,7 @@
                     <div class="product-wrapper product-wrapper-border mb-30">
                         <div class="product-img-5">
                             <a href="#">
-                                <img src="assets/img/product/electro/20.jpg" alt="">
+                                <img src="/assets/img/product/electro/20.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-content-7">
@@ -601,7 +588,7 @@
                     <div class="product-wrapper product-wrapper-border mb-30">
                         <div class="product-img-5">
                             <a href="#">
-                                <img src="assets/img/product/electro/21.jpg" alt="">
+                                <img src="/assets/img/product/electro/21.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-content-7">
@@ -635,31 +622,31 @@
         <div class="container-fluid">
             <div class="brand-logo-active2 owl-carousel">
                 <div class="single-brand">
-                    <img src="assets/img/brand-logo/7.png" alt="">
+                    <img src="/assets/img/brand-logo/7.png" alt="">
                 </div>
                 <div class="single-brand">
-                    <img src="assets/img/brand-logo/8.png" alt="">
+                    <img src="/assets/img/brand-logo/8.png" alt="">
                 </div>
                 <div class="single-brand">
-                    <img src="assets/img/brand-logo/9.png" alt="">
+                    <img src="/assets/img/brand-logo/9.png" alt="">
                 </div>
                 <div class="single-brand">
-                    <img src="assets/img/brand-logo/10.png" alt="">
+                    <img src="/assets/img/brand-logo/10.png" alt="">
                 </div>
                 <div class="single-brand">
-                    <img src="assets/img/brand-logo/11.png" alt="">
+                    <img src="/assets/img/brand-logo/11.png" alt="">
                 </div>
                 <div class="single-brand">
-                    <img src="assets/img/brand-logo/12.png" alt="">
+                    <img src="/assets/img/brand-logo/12.png" alt="">
                 </div>
                 <div class="single-brand">
-                    <img src="assets/img/brand-logo/13.png" alt="">
+                    <img src="/assets/img/brand-logo/13.png" alt="">
                 </div>
                 <div class="single-brand">
-                    <img src="assets/img/brand-logo/7.png" alt="">
+                    <img src="/assets/img/brand-logo/7.png" alt="">
                 </div>
                 <div class="single-brand">
-                    <img src="assets/img/brand-logo/8.png" alt="">
+                    <img src="/assets/img/brand-logo/8.png" alt="">
                 </div>
             </div>
         </div>
@@ -858,7 +845,7 @@
                                         <th></th>
                                         <th>
                                             <a href="#">Remove <span>x</span></a>
-                                            <img src="assets/img/cart/4.jpg" alt="">
+                                            <img src="/assets/img/cart/4.jpg" alt="">
                                             <p>Blush Sequin Top </p>
                                             <span>$75.99</span>
                                             <a class="compare-btn" href="#">Add to cart</a>
@@ -947,25 +934,25 @@
                         <div class="quick-view-learg-img">
                             <div class="quick-view-tab-content tab-content">
                                 <div class="tab-pane active show fade" id="modal1" role="tabpanel">
-                                    <img src="assets/img/quick-view/l1.jpg" alt="">
+                                    <img src="/assets/img/quick-view/l1.jpg" alt="">
                                 </div>
                                 <div class="tab-pane fade" id="modal2" role="tabpanel">
-                                    <img src="assets/img/quick-view/l2.jpg" alt="">
+                                    <img src="/assets/img/quick-view/l2.jpg" alt="">
                                 </div>
                                 <div class="tab-pane fade" id="modal3" role="tabpanel">
-                                    <img src="assets/img/quick-view/l3.jpg" alt="">
+                                    <img src="/assets/img/quick-view/l3.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="quick-view-list nav" role="tablist">
                             <a class="active" href="#modal1" data-toggle="tab" role="tab">
-                                <img src="assets/img/quick-view/s1.jpg" alt="">
+                                <img src="/assets/img/quick-view/s1.jpg" alt="">
                             </a>
                             <a href="#modal2" data-toggle="tab" role="tab">
-                                <img src="assets/img/quick-view/s2.jpg" alt="">
+                                <img src="/assets/img/quick-view/s2.jpg" alt="">
                             </a>
                             <a href="#modal3" data-toggle="tab" role="tab">
-                                <img src="assets/img/quick-view/s3.jpg" alt="">
+                                <img src="/assets/img/quick-view/s3.jpg" alt="">
                             </a>
                         </div>
                     </div>
@@ -1031,18 +1018,18 @@
 
 
     <!-- all js here -->
-    <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/ajax-mail.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="/assets/js/popper.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/ajax-mail.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

@@ -287,7 +287,7 @@
                                     <tfoot>
                                         <tr class="cart-subtotal">
                                             <th>Cart Subtotal</th>
-                                            <td><span class="amount">GH¢ {{Cart::session(auth()->id())->getTotal()}}</span></td>
+                                            <td><span class="amount">GH¢ {{\Cart::session(auth()->id())->getSubTotal()}}</span></td>
                                         </tr>
                                         <tr class="order-total">
                                             <th>Order Total</th>

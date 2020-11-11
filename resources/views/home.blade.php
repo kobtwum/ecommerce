@@ -12,54 +12,54 @@
                     <ul>
                         @foreach ($categories as $category)
 
-                        <li>
-                        <a href="{{ route('products.index', ['category_id' => $category->id]) }}"><img alt="" src="assets/img/icon-img/5.png">{{$category->name}} <i class="pe-7s-angle-right"></i></a>
+                            <li>
+                            <a href="{{ route('products.index', ['category_id' => $category->id]) }}"><img alt="" src="assets/img/icon-img/5.png">{{$category->name}} <i class="pe-7s-angle-right"></i></a>
 
-                            @php
-                                $children = TCG\Voyager\Models\Category::where('parent_id', $category->id)->get();
-                            @endphp
+                                @php
+                                    $children = TCG\Voyager\Models\Category::where('parent_id', $category->id)->get();
+                                @endphp
 
-                            @if($children->isNotEmpty())
-
-
-                                <div class="category-menu-dropdown">
-
-                                    @foreach ($children as $child)
-
-                                        <div class="category-dropdown-style category-common4 mb-40">
-                                            <h4 class="categories-subtitle">
-                                                <a href="{{ route('products.index', ['category_id' => $child->id]) }}">{{$child->name}}</a>
-                                            </h4>
-
-                                            @php
-                                                $grandChildren = TCG\Voyager\Models\Category::where('parent_id', $child->id)->get();
-                                            @endphp
-
-                                            @if($children->isNotEmpty())
-
-                                                <ul>
-
-                                                    @foreach ($grandChildren as $grandChild)
-                                                        <li><a href="{{ route('products.index', ['category_id' => $grandChild->id]) }}">{{$grandChild->name}}</a></li>
-                                                    @endforeach
-
-                                                </ul>
-
-                                            @endif
-
-                                        </div>
-
-                                    @endforeach
-                                </div>
-
-                            @endif
+                                @if($children->isNotEmpty())
 
 
+                                    <div class="category-menu-dropdown">
 
-                        </li>
-                        {{-- <li>
-                            <a href="#"><img alt="" src="assets/img/icon-img/11.png"> {{$category->name}} </a>
-                        </li> --}}
+                                        @foreach ($children as $child)
+
+                                            <div class="category-dropdown-style category-common4 mb-40">
+                                                <h4 class="categories-subtitle">
+                                                    <a href="{{ route('products.index', ['category_id' => $child->id]) }}">{{$child->name}}</a>
+                                                </h4>
+
+                                                @php
+                                                    $grandChildren = TCG\Voyager\Models\Category::where('parent_id', $child->id)->get();
+                                                @endphp
+
+                                                @if($children->isNotEmpty())
+
+                                                    <ul>
+
+                                                        @foreach ($grandChildren as $grandChild)
+                                                            <li><a href="{{ route('products.index', ['category_id' => $grandChild->id]) }}">{{$grandChild->name}}</a></li>
+                                                        @endforeach
+
+                                                    </ul>
+
+                                                @endif
+
+                                            </div>
+
+                                        @endforeach
+                                    </div>
+
+                                @endif
+
+
+
+                            </li>
+                            {{-- <li>
+                                <a href="#"><img alt="" src="assets/img/icon-img/11.png"> {{$category->name}} </a>
+                            </li> --}}
 
                         @endforeach
                     </ul>

@@ -6,6 +6,7 @@ use App\Category;
 use App\Product;
 use Illuminate\Http\Request;
 
+
 class ProductController extends Controller
 {
     /**
@@ -24,7 +25,7 @@ class ProductController extends Controller
            $category = Category::find($categoryId);
            $categoryName = ucfirst($category->name);
 
-           $products = $category->allProducts();
+           $products = $category->allProducts();;
        }
        else{
            $products = Product::take(10)->get();
@@ -41,5 +42,10 @@ class ProductController extends Controller
         $products = Product::where('name','LIKE',"%$query%")->paginate(10);
 
         return view('product.catalogue',compact('products'));;
+    }
+
+    public function show(Product $product)
+    {
+        return view('product.show', compact('product'));
     }
 }

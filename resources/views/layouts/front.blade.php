@@ -42,7 +42,7 @@
                 </div>
                 <div class="notification-btn-close">
                     <div class="notification-btn">
-                        <a href="#">Shop Now</a>
+                        <a href="{{route('shops.create')}}">Own Your Shop</a>
                     </div>
                     <div class="notification-close notification-icon">
                         <button><i class="pe-7s-close"></i></button>

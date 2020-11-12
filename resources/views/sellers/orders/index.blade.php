@@ -27,6 +27,7 @@
                         @if($subOrder->status != 'completed')
 
                             <a href=" {{route('seller.order.delivered', $subOrder)}} " class="btn btn-primary btn-sm">mark as delivered</button>
+
                         @endif
                     </td>
 

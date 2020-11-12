@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSubOrderItemsTable extends Migration
+class CreateAttributesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,9 @@ class CreateSubOrderItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sub_order_items', function (Blueprint $table) {
+        Schema::create('attributes', function (Blueprint $table) {
             $table->id();
-
-            $table->foreignId('sub_order_id')->constrained()->onDelete('cascade');
-            $table->foreignId('product_id')->constrained()->onDelete('cascade');
-
-            $table->float('price');
-            $table->integer('quantity');
-
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -33,6 +27,6 @@ class CreateSubOrderItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sub_order_items');
+        Schema::dropIfExists('attributes');
     }
 }

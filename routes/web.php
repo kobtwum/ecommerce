@@ -44,6 +44,9 @@ Route::get('paypal/checkout-cancel', 'PayPalController@cancelPage')->name('paypa
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+
+    Route::get('/order/pay/{suborder}', 'SubOrderController@pay')->name('order.pay');
+    
 });
 
 

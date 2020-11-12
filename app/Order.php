@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
+
     protected $guarded = [];
 
     public function items()
@@ -43,6 +44,7 @@ class Order extends Model
                 'grand_total'=> $products->sum('pivot.price'),
                 'item_count'=> $products->count()
             ]);
+
 
             foreach($products as $product) {
                 $suborder->items()->attach($product->id, ['price' => $product->pivot->price, 'quantity' => $product->pivot->quantity]);

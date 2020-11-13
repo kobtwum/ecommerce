@@ -22,7 +22,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="shop-sidebar mr-50">
+                    {{-- <div class="shop-sidebar mr-50">
                         <div class="sidebar-widget mb-50">
                             <h3 class="sidebar-title">Search Products</h3>
                             <div class="sidebar-search">
@@ -179,7 +179,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-lg-9">
                     <div class="shop-product-wrapper res-xl res-xl-btn">

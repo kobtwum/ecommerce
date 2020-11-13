@@ -12,12 +12,12 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('users')->delete();
-
+        
         \DB::table('users')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'role_id' => 3,
@@ -31,7 +31,7 @@ class UsersTableSeeder extends Seeder
                 'created_at' => '2020-10-29 11:20:20',
                 'updated_at' => '2020-11-07 08:01:41',
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'role_id' => 1,
@@ -45,7 +45,7 @@ class UsersTableSeeder extends Seeder
                 'created_at' => '2020-11-05 20:32:32',
                 'updated_at' => '2020-11-05 20:32:32',
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'role_id' => 3,
@@ -59,10 +59,10 @@ class UsersTableSeeder extends Seeder
                 'created_at' => '2020-11-06 15:50:54',
                 'updated_at' => '2020-11-06 16:40:46',
             ),
-            3 =>
+            3 => 
             array (
                 'id' => 4,
-                'role_id' => 2,
+                'role_id' => 3,
                 'name' => 'Carol Heath',
                 'email' => 'carol@mail.com',
                 'avatar' => 'users/default.png',
@@ -71,11 +71,12 @@ class UsersTableSeeder extends Seeder
                 'remember_token' => NULL,
                 'settings' => NULL,
                 'created_at' => '2020-11-07 08:03:35',
-                'updated_at' => '2020-11-07 08:03:35',
-            ),4 =>
+                'updated_at' => '2020-11-09 10:40:14',
+            ),
+            4 => 
             array (
                 'id' => 5,
-                'role_id' => 2,
+                'role_id' => 3,
                 'name' => 'Adam Smith',
                 'email' => 'adam@mail.com',
                 'avatar' => 'users/default.png',
@@ -84,12 +85,12 @@ class UsersTableSeeder extends Seeder
                 'remember_token' => NULL,
                 'settings' => NULL,
                 'created_at' => '2020-11-07 08:03:35',
-                'updated_at' => '2020-11-07 08:03:35',
+                'updated_at' => '2020-11-13 07:40:36',
             ),
-            5 =>
+            5 => 
             array (
                 'id' => 6,
-                'role_id' => 2,
+                'role_id' => 3,
                 'name' => 'Fiifi Bradford',
                 'email' => 'fiifi@mail.com',
                 'avatar' => 'users/default.png',
@@ -98,10 +99,10 @@ class UsersTableSeeder extends Seeder
                 'remember_token' => NULL,
                 'settings' => NULL,
                 'created_at' => '2020-11-07 08:03:35',
-                'updated_at' => '2020-11-07 08:03:35',
+                'updated_at' => '2020-11-09 16:41:42',
             ),
         ));
-
-
+        
+        
     }
 }

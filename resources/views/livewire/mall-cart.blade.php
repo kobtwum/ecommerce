@@ -30,7 +30,7 @@
                                                 <a href="#"><img src="assets/img/cart/1.jpg" alt=""></a>
                                             </td>
                                             <td class="product-name"><a href="#">{{$item['name']}} </a></td>
-                                        <td class="product-price-cart"><span class="amount">GH¢ {{$item['price']}}</span></td>
+                                            <td class="product-price-cart"><span class="amount">GH¢ {{$item['price']}}</span></td>
                                             <td class="product-quantity">
                                                 <livewire:cart-update-form :item="$item" :key="$item['id']" />
                                             <td class="product-subtotal">GH¢ {{Cart::session(auth()->id())->get($item['id'])->getPriceSum()}}</td>

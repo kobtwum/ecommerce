@@ -41,9 +41,18 @@
                     <p>Get A big Discount for Gadgets. 10% to 70% Discount for all products. Save money</p>
                 </div>
                 <div class="notification-btn-close">
-                    <div class="notification-btn">
-                        <a href="{{route('shops.create')}}">Own Your Shop</a>
-                    </div>
+                    @auth
+                        @if (Auth::user()->role_id <> 3)
+                            <div class="notification-btn">
+                                <a href="{{route('shops.create')}}">Own Your Shop</a>
+                            </div>
+                        @else
+                            <div class="notification-btn">
+                                <a href="{{url('/admin/shops')}}">Go To Shop</a>
+                            </div>
+                        @endif
+                    @endauth
+
                     <div class="notification-close notification-icon">
                         <button><i class="pe-7s-close"></i></button>
                     </div>
@@ -63,7 +72,7 @@
                 <div class="electronics-login-register">
                     <ul>
 
-                        <li><a data-toggle="modal" data-target="#exampleCompare" href="#"><i class="pe-7s-repeat"></i>Compare</a></li>
+                        {{-- <li><a data-toggle="modal" data-target="#exampleCompare" href="#"><i class="pe-7s-repeat"></i>Compare</a></li> --}}
                         <li><a href="wishlist.html"><i class="pe-7s-like"></i>Wishlist</a></li>
                         {{-- <li><a href="#"><i class="pe-7s-users"></i>My Account</a></li> --}}
                         @guest
@@ -644,7 +653,7 @@
         </div>
     </div> --}}
 
-    <div class="newsletter-area ptb-60">
+    {{-- <div class="newsletter-area ptb-60">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-6">
@@ -673,7 +682,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <footer class="footer-area">
         <div class="footer-top-3 black-bg pt-75 pb-25">
             <div class="container">

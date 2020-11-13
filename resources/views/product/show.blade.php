@@ -8,7 +8,11 @@
             <div class="row">
                 <div class="col-md-12 col-lg-7 col-12">
                     <div class="product-details-5 pr-70">
-                        <img src="/assets/img/product-details/l1-details-5.png" alt="">
+                        @if(!empty($product->cover_img))
+                            <img src="{{asset('storage/'.$product->cover_img)}}" alt="">
+                        @else
+                            <img src="/assets/img/product/electro/1.jpg" alt="">
+                        @endif
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-5 col-12">
@@ -23,7 +27,7 @@
                                 <i class="pe-7s-star"></i>
                             </div>
                             <div class="quick-view-number">
-                                <span>2 Ratting (S)</span>
+                                <span>2 Rating (S)</span>
                             </div>
                         </div>
                         <div class="details-price">
@@ -41,14 +45,10 @@
                         <div class="product-details-cati-tag mt-35">
                             <ul>
                                 <li class="categories-title">Categories :</li>
-                                <li><a href="#">fashion</a></li>
-                                <li><a href="#">electronics</a></li>
-                                <li><a href="#">toys</a></li>
-                                <li><a href="#">food</a></li>
-                                <li><a href="#">jewellery</a></li>
+                                <li><a href="#">{{$product->category ? $product->category->categoryName : ''}}</a></li>
                             </ul>
                         </div>
-                        <div class="product-details-cati-tag mtb-10">
+                        {{-- <div class="product-details-cati-tag mtb-10">
                             <ul>
                                 <li class="categories-title">Tags :</li>
                                 <li><a href="#">fashion</a></li>
@@ -57,8 +57,8 @@
                                 <li><a href="#">food</a></li>
                                 <li><a href="#">jewellery</a></li>
                             </ul>
-                        </div>
-                        <div class="product-share">
+                        </div> --}}
+                        {{-- <div class="product-share">
                             <ul>
                                 <li class="categories-title">Share :</li>
                                 <li>
@@ -82,7 +82,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
